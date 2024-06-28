@@ -11,7 +11,7 @@ function SearchResults({ searchResults, currentPage, totalPages, handleNextPage,
                         <div key={result.id} className='pic__box'>
                             <img src={result.urls.small} alt={result.alt_description} />
                             <div className='pics_details'>
-                                <h3>{result.description ? result.description : 'No Description'}</h3>
+                                <h3>{result.alt_description ? result.alt_description : 'No Description'}</h3>
                                 <p>
                                     Photographed by: <a href={`/author/${result.user.username}`}>{result.user.name}</a>
                                 </p>

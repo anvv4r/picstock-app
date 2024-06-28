@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../App.css';
 import SearchBar from './SearchBar';
 import SearchResults from './SearchResults';
-import { API_KEY } from '../assets/Key';
+// import { API_KEY } from '../assets/Key';
 
 function HomePage() {
     const [searchQuery, setSearchQuery] = useState('bali');
@@ -17,7 +17,7 @@ function HomePage() {
                     `https://api.unsplash.com/search/photos?query=${searchQuery}&page=${currentPage}&per_page=10`,
                     {
                         headers: {
-                            Authorization: `Client-ID ${API_KEY}`,
+                            Authorization: `Client-ID AFXTJlBIDFLENgCoWgwYwm9zRj-syouR77E-zEjfWg8`,
                         },
                     },
                 );
