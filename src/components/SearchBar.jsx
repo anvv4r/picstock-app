@@ -13,7 +13,7 @@ function SearchBar({ setSearchQuery }) {
     };
 
     return (
-        <div className='search__bar'>
+        <div>
             <form onSubmit={handleSearch}>
                 <input type='text' value={inputValue} onChange={handleInputChange} placeholder='Search for Pics...' />
                 &nbsp;&nbsp;<button type='submit'>Search</button>
