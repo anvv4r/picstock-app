@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import { API_KEY } from '../assets/Key';
 
 function AuthorDetails() {
     const navigate = useNavigate();
@@ -10,7 +11,7 @@ function AuthorDetails() {
         const fetchAuthor = async () => {
             const response = await fetch(`https://api.unsplash.com/users/${username}?`, {
                 headers: {
-                    Authorization: 'Client-ID AFXTJlBIDFLENgCoWgwYwm9zRj-syouR77E-zEjfWg8',
+                    Authorization: `Client-ID ${API_KEY}`,
                 },
             });
 
