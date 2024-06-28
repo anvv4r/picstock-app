@@ -10,6 +10,7 @@ function SearchBar({ setSearchQuery }) {
     const handleSearch = (e) => {
         e.preventDefault();
         setSearchQuery(inputValue);
+        setInputValue('');
     };
 
     return (

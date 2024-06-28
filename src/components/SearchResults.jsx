@@ -15,7 +15,7 @@ function SearchResults({ searchResults, currentPage, totalPages, handleNextPage,
                                 <p>
                                     Photographed by: <a href={`/author/${result.user.username}`}>{result.user.name}</a>
                                 </p>
-                                <p>Published: {result.updated_at}</p>
+                                <p>Published: {result.created_at}</p>
                                 <p>Location: {result.user.location ? result.user.location : 'No record'}</p>
                             </div>
                         </div>
