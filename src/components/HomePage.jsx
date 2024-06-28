@@ -24,7 +24,7 @@ function HomePage() {
                 const data = await response.json();
                 setSearchResults(data.results);
                 setTotalPages(data.total_pages);
-                console.log('Data fetched: ', data);
+                // console.log('Data fetched: ', data);
             }
         };
         fetchData();
